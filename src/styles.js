@@ -13,9 +13,8 @@ export const Style = styled.div`
     height: 100vh;
     overflow: hidden;
     img {
-      max-width: 100%;
       width: 100%;
-      height: auto;
+      height: 100%;
     }
   }
 
@@ -39,18 +38,32 @@ export const Style = styled.div`
       padding: 0;
       font-size: 17.8889px;
       line-height: 27px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
     }
 
     .primary {
       color: #ffffff;
       background: #ea454c;
       box-shadow: 0px 5.11111px 12.7778px rgba(233, 68, 75, 0.25);
+      transition: 0.2s;
+    }
+    .primary:hover {
+      background-color: #c44d56;
     }
 
     .outlined {
       border: 1.27778px solid rgba(0, 0, 0, 0.25);
       filter: drop-shadow(0px 5.11111px 12.7778px rgba(0, 0, 0, 0.1));
       border-radius: 15.3333px;
+      transition: 0.2s;
+    }
+
+    .outlined:hover {
+      background-color: #e4e9ed;
     }
 
     > span {
@@ -101,6 +114,7 @@ export const Style = styled.div`
         border-radius: 5.11111px;
         margin-right: 8px;
         background: none;
+        cursor: pointer;
       }
 
       .label {
@@ -124,6 +138,11 @@ export const Style = styled.div`
           font-size: 15.3333px;
           line-height: 23px;
           color: #181818;
+          cursor: pointer;
+        }
+
+        .forgot-pass:hover {
+          text-decoration: underline;
         }
 
         .checkbox-wrapper {
@@ -146,6 +165,10 @@ export const Style = styled.div`
       letter-spacing: 0.03em;
       color: #595959;
       margin-top: 16px;
+      cursor: pointer;
+    }
+    .text:hover {
+      text-decoration: underline;
     }
   }
 `;

@@ -4,7 +4,7 @@ function App() {
   return (
     <Style>
       <div className='background'>
-        <img src='Right Side.svg' alt='' />
+        <img src='Right Side.png' alt='' />
       </div>
 
       <div className='form'>
@@ -48,6 +48,7 @@ function App() {
             <span>Sign in</span>
           </button>
           <button className='outlined input-h'>
+            <img src='google-icon.png' alt='google' />
             <span>Sign in with Google</span>
           </button>
         </div>
