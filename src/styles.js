@@ -171,4 +171,68 @@ export const Style = styled.div`
       text-decoration: underline;
     }
   }
+
+  @media (max-width: 990px) {
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+
+    .input-h {
+      height: 2.5rem;
+    }
+    .background {
+      height: 45vh;
+      width: 100%;
+      overflow: visible;
+    }
+
+    .form {
+      padding: 0;
+      .fields {
+        margin-top: 1.2rem;
+
+        input[type="password"],
+        input[type="email"] {
+          font-size: 14px;
+
+          display: flex;
+          align-items: center;
+          margin-top: 8px;
+          background: none;
+        }
+
+        input[type="checkbox"] {
+          margin-right: 4px;
+        }
+
+        .field {
+          margin: 0;
+
+          .checkbox-label,
+          .forgot-pass {
+            font-size: 12px;
+          }
+        }
+      }
+
+      .buttons {
+        gap: 12px;
+      }
+
+      button {
+        border-radius: 12px;
+        font-size: 14px;
+
+        img {
+          height: 80%;
+        }
+      }
+    }
+    .text {
+      margin-bottom: 8px;
+    }
+    .header {
+      display: none;
+    }
+  }
 `;
